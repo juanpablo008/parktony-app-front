@@ -3,6 +3,16 @@ import LandingHeader from '../pages/landing/components/LandingHeader';
 import Footer from '../pages/landing/components/Footer';
 import ImageCarousel from '../components/ui/ImageCarousel';
 import { Phone, Mail, Clock, CheckCircle, Star, TrendingUp, Gift, Calculator } from 'lucide-react';
+import servicios1 from '../assets/images/servicios-1.jpg';
+import servicios2 from '../assets/images/servicios-2.jpg';
+import servicios3 from '../assets/images/servicios-3.jpg';
+import servicios4 from '../assets/images/servicios-4.jpg';
+import servicios5 from '../assets/images/servicios-5.jpg';
+import servicios6 from '../assets/images/servicios-6.jpg';
+import servicios7 from '../assets/images/servicios-7.jpg';
+import servicios8 from '../assets/images/servicios-8.jpg';
+import servicios9 from '../assets/images/servicios-9.jpg';
+import servicios10 from '../assets/images/servicios-10.jpg';
 
 const LandingLayout = ({ children }) => {
   const [spaces, setSpaces] = useState('');
@@ -32,54 +42,16 @@ const LandingLayout = ({ children }) => {
     setMonthlyRevenue(value);
   };
   const carouselImages = [
-    {
-      src: '/parking-hero.jpg',
-      alt: 'Parqueadero moderno',
-      caption: 'Gestión Inteligente',
-      description: 'Control total de tu parqueadero en tiempo real'
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1590674899484-d5640e854abe?w=800&q=80',
-      alt: 'Sistema de control',
-      caption: 'Tecnología Avanzada',
-      description: 'Plataforma diseñada para maximizar eficiencia'
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80',
-      alt: 'Reportes y análisis',
-      caption: 'Reportes Detallados',
-      description: 'Analiza tendencias y toma mejores decisiones'
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80',
-      alt: 'Dashboard analytics',
-      caption: 'Dashboard Intuitivo',
-      description: 'Visualiza todas tus métricas importantes'
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
-      alt: 'App móvil',
-      caption: 'App para Conductores',
-      description: 'Los usuarios encuentran parqueadero desde su celular'
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1565008576549-57569a791960?w=800&q=80',
-      alt: 'Barrera automática',
-      caption: 'Acceso Automatizado',
-      description: 'Barreras y control de acceso inteligente'
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80',
-      alt: 'Sistema contable',
-      caption: 'Contabilidad Automática',
-      description: 'Reportes financieros generados al instante'
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&q=80',
-      alt: 'Soporte en línea',
-      caption: 'Soporte 24/7',
-      description: 'Equipo dedicado para ayudarte en todo momento'
-    }
+    { src: servicios1, alt: 'Cámara de seguridad', caption: 'Seguridad 24/7', description: 'Monitoreo constante con cámaras de vigilancia' },
+    { src: servicios2, alt: 'Auto enjabonado', caption: 'Lavado Premium', description: 'Servicio de lavado profesional integrado' },
+    { src: servicios3, alt: 'Parqueadero vista aérea', caption: 'Vista Panorámica', description: 'Control total desde una perspectiva global' },
+    { src: servicios4, alt: 'Parqueadero cubierto', caption: 'Espacios Protegidos', description: 'Parqueaderos techados con estructura segura' },
+    { src: servicios5, alt: 'Navegación GPS', caption: 'App de Navegación', description: 'Encuentra tu parqueadero ideal con mapas en tiempo real' },
+    { src: servicios6, alt: 'Auto con jabón', caption: 'Cuidado Vehicular', description: 'Servicios complementarios para tu vehículo' },
+    { src: servicios7, alt: 'Pantalla del auto', caption: 'Integración Vehicular', description: 'Conectividad directa con el sistema de tu auto' },
+    { src: servicios8, alt: 'Tarjeta de pago', caption: 'Pagos Seguros', description: 'Transacciones rápidas y protegidas' },
+    { src: servicios9, alt: 'Parqueadero al aire libre', caption: 'Espacios Abiertos', description: 'Parqueaderos con áreas verdes y buena iluminación' },
+    { src: servicios10, alt: 'Parqueadero vista aérea', caption: 'Gestión Inteligente', description: 'Optimización de espacios en tiempo real' }
   ];
 
   const benefits = [

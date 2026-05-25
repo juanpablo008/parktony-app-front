@@ -16,7 +16,7 @@ const ImageCarousel = ({ images, autoPlayInterval = 5000 }) => {
     setIsAnimating(true);
     setDirection('next');
     setCurrentIndex((prev) => (prev + 1) % images.length);
-    setTimeout(() => setIsAnimating(false), 500);
+    setTimeout(() => setIsAnimating(false), 1500);
   };
 
   handleNextRef.current = handleNext;
@@ -34,7 +34,7 @@ const ImageCarousel = ({ images, autoPlayInterval = 5000 }) => {
     setIsAnimating(true);
     setDirection('prev');
     setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
-    setTimeout(() => setIsAnimating(false), 500);
+    setTimeout(() => setIsAnimating(false), 1500);
   };
 
   const goToSlide = (index) => {
@@ -42,7 +42,7 @@ const ImageCarousel = ({ images, autoPlayInterval = 5000 }) => {
     setIsAnimating(true);
     setDirection(index > currentIndex ? 'next' : 'prev');
     setCurrentIndex(index);
-    setTimeout(() => setIsAnimating(false), 500);
+    setTimeout(() => setIsAnimating(false), 1500);
   };
 
   const handleImageClick = () => {
@@ -62,7 +62,7 @@ const ImageCarousel = ({ images, autoPlayInterval = 5000 }) => {
         {images.map((image, index) => (
           <div
             key={index}
-            className={`absolute inset-0 transition-all duration-500 ease-out ${
+            className={`absolute inset-0 transition-all duration-[1500ms] ease-out ${
               index === currentIndex
                 ? 'opacity-100 scale-100 z-10'
                 : direction === 'next'
